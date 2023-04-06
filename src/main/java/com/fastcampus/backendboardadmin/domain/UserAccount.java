@@ -52,7 +52,7 @@ public class UserAccount extends AuditingField {
         return UserAccount.of(userId, userPw, roleTypes, email, nickname, memo, null);
     }
 
-    private static UserAccount of(String userId, String userPw, Set<RoleType> roleTypes, String email, String nickname, String memo, String createdId) {
+    public static UserAccount of(String userId, String userPw, Set<RoleType> roleTypes, String email, String nickname, String memo, String createdId) {
         return new UserAccount(userId,userPw,roleTypes,email,nickname,memo,createdId);
     }
 
