@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<thlogic>
+    <attr sel="#layout-head" th:replace="layout/layout-head :: common_head(~{::title}, (~{::link} ?: ~{}))" />
+    <attr sel="#layout-header" th:replace="layout/layout-header :: header" />
+    <attr sel="#layout-left-aside" th:replace="layout/layout-left-aside :: aside" />
+    <attr sel="#layout-main" th:replace="layout/layout-main-table :: common_main_table('게시글 관리', (~{::#main-table} ?: ~{}))" />
+    <attr sel="#layout-right-aside" th:replace="layout/layout-right-aside :: aside" />
+    <attr sel="#layout-footer" th:replace="layout/layout-footer :: footer" />
+    <attr sel="#layout-scripts" th:replace="layout/layout-script :: script" />
+</thlogic>
